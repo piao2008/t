@@ -6,6 +6,10 @@ pipeline{
                 bat 'javac Demo1.java'
             }
         }
-
+        stage("run-javaclass"){
+            steps{
+                bat 'java Demo1'
+            }
+        }
     }
 }
