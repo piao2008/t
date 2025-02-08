@@ -33,8 +33,10 @@ pipeline{
        <h1>total cases: ${TEST COUNTS,var="total"}</h1>
        <h1>pass cases: ${TEST COUNTS,var="pass"}</h1>
        <h1>fail cases:${TEST COUNTS,var="fail"}</h1>
-       <html>''', subject: 'pipeline-demo-测试', to: '6411111@qq.com'
+       <html>''',
+        subject: 'pipeline-demo-测试', to: '6411111@qq.com',
+        publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+
       }
-publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
     }
 }
