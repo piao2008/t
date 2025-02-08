@@ -27,4 +27,13 @@ pipeline{
                     }
                 }
     }
+    post {
+      always {
+       emailext body: '''<html>
+       <h1>total cases: ${TEST COUNTS,var="total"}</h1>
+       <h1>pass cases: ${TEST COUNTS,var="pass"}</h1>
+       <h1>fail cases:${TEST COUNTS,var="fail"}</h1>
+       <html>''', subject: 'pipeline-demo-测试', to: '6411111@qq.com'
+      }
+    }
 }
