@@ -35,7 +35,6 @@ pipeline{
        <h1>fail cases:${TEST COUNTS,var="fail"}</h1>
        <html>''', subject: 'pipeline-demo-测试', to: '6411111@qq.com'
       }
-
-      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
     }
 }
