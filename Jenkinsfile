@@ -3,8 +3,9 @@ pipeline{
     stages{
         stage("create-javaclass"){
             steps{
-                #bat 'chcp 65001'
+                //bat 'chcp 65001'
                 echo "开始编译java源文件"
+                //指定编译时的编码
                 bat 'javac -encoding UTF-8 Demo1.java'
 
             }
