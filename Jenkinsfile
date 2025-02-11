@@ -3,6 +3,7 @@ pipeline{
     environment {
             LANG = 'zh_CN.UTF-8'
             LC_ALL = 'zh_CN.UTF-8'
+
         }
     stages{
         stage("create-javaclass"){
