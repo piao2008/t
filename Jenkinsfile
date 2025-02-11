@@ -4,7 +4,7 @@ pipeline{
         stage("create-javaclass"){
             steps{
                 bat 'chcp 65001'
-                bat 'javac Demo1.java'
+                bat 'javac -encoding UTF-8 Demo1.java'
 
             }
         }
