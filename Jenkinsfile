@@ -6,7 +6,7 @@ pipeline{
 
         }
     stages{
-        stage("create-javaclass"){
+        stage("create-javaclass编译java"){
             steps{
                 //bat 'chcp 65001'
                 echo "开始编译java源文件"
