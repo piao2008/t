@@ -9,8 +9,7 @@ pipeline{
         stage("create-javaclass编译java"){
             steps{
 
-                echo $LANG
-                echo $LC_ALL
+
 
                 //bat 'chcp 65001'
                 echo "开始编译java源文件"
