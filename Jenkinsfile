@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage("create-javaclass"){
             steps{
+                bat 'chcp 65001'
                 bat 'javac Demo1.java'
+
             }
         }
         stage("run-javaclass"){
