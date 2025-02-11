@@ -11,7 +11,7 @@ pipeline{
 
                 echo $LANG
                 echo $LC_ALL
-                locale
+
                 //bat 'chcp 65001'
                 echo "开始编译java源文件"
                 //指定编译时的编码
